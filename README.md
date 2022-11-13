@@ -1,8 +1,12 @@
 # Integrate LK Systems ICS.2 with Home Assistant
 How to setup Home Assistant with modbus integration for LK Systems ICS.2
 
+![image](img/ha-screenshot.png)
+
 In this example a USB to RS-485 adapter us used to connect a Home Assistant servier with a ICS.2 floor heating controller from LK Systems.
 I have successfully used a `DSD TECH SH-U10L USB to RS485-cable` available from Amazon and many other sources.
+
+![image](img/RS485-dongle.jpg)
 
 Example setup in configuration.yaml:
 ```yaml
@@ -66,5 +70,5 @@ modbus:
       input_type: discrete_input
 ```
 
-If you have more than one USB device connected to your HA hardware it happens that the Modbus dongle appears as a different USB port 
+If you have more than one USB device connected to your HA hardware it happens that the Modbus dongle appears as a different USB port
 after power cycle and/or reboot. You can avoid this problem by using the name from `/dev/serial/by-id` or `/dev/serial/by-path`.

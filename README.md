@@ -1,4 +1,6 @@
 # Integrate LK Systems ICS.2 with Home Assistant
+## This instruction is obsolete. Please look at https://github.com/astrandb/lk_ics2 for a modern custom component.
+
 How to setup Home Assistant with modbus integration for LK Systems ICS.2
 
 ![image](img/ha-screenshot.png)
